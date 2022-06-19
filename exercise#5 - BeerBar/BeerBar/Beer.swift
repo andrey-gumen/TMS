@@ -21,7 +21,6 @@
 
 
 import Foundation
-import CoreVideo
 
 final class Beer {
     var name: String = "Unknown"
