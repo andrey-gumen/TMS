@@ -21,8 +21,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         BeerManager.instance.reserve = [
-            Beer(name: "Kozel", price: 420, country: "Czech Republic", volume: 40),
-            Beer(name: "Pilsener", price: 630, country: "Germany", volume: 40)
+            Beer(name: "Kozel", price: 140 * 1000 / 300, country: "Czech Republic", volume: 40),
+            Beer(name: "Pilsener", price: 210 * 1000 / 300, country: "Germany", volume: 40)
         ]
     }
     
