@@ -94,6 +94,15 @@
                                     <action selector="sellBeer2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lkt-rB-2Al"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIx-R6-pOJ">
+                                <rect key="frame" x="240" y="335" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                                <connections>
+                                    <segue destination="6fv-Y4-OU3" kind="show" id="Xr0-iY-ZQm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -108,7 +117,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="27.69230769230769" y="68.957345971563981"/>
+            <point key="canvasLocation" x="-132" y="-168"/>
+        </scene>
+        <!--Sub View Controller-->
+        <scene sceneID="sqL-5U-Jvh">
+            <objects>
+                <viewController id="6fv-Y4-OU3" customClass="SubViewController" customModule="BeerBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gio-ul-MTK">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="g8Z-1q-Fjy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6ne-pM-BOT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="11u-8V-PG5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="698" y="-168"/>
         </scene>
     </scenes>
     <resources>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1EE98612860EC8A00D26435 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE98602860EC8A00D26435 /* SubViewController.swift */; };
 		A1F3D0A1285F8651008E8032 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F3D0A0285F8651008E8032 /* AppDelegate.swift */; };
 		A1F3D0A3285F8651008E8032 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F3D0A2285F8651008E8032 /* SceneDelegate.swift */; };
 		A1F3D0A5285F8651008E8032 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F3D0A4285F8651008E8032 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A1EE98602860EC8A00D26435 /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		A1F3D09D285F8651008E8032 /* BeerBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F3D0A0285F8651008E8032 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1F3D0A2285F8651008E8032 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				A1F3D0A0285F8651008E8032 /* AppDelegate.swift */,
 				A1F3D0A2285F8651008E8032 /* SceneDelegate.swift */,
 				A1F3D0A4285F8651008E8032 /* ViewController.swift */,
+				A1EE98602860EC8A00D26435 /* SubViewController.swift */,
 				A1F3D0A6285F8651008E8032 /* Main.storyboard */,
 				A1F3D0A9285F8653008E8032 /* Assets.xcassets */,
 				A1F3D0AB285F8653008E8032 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				A1F3D0A5285F8651008E8032 /* ViewController.swift in Sources */,
 				A1F3D0A1285F8651008E8032 /* AppDelegate.swift in Sources */,
+				A1EE98612860EC8A00D26435 /* SubViewController.swift in Sources */,
 				A1F3D0A3285F8651008E8032 /* SceneDelegate.swift in Sources */,
 				A1FC0D33285F8733006F26E5 /* Beer.swift in Sources */,
 			);
