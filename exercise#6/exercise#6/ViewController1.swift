@@ -52,11 +52,11 @@ class ViewController1: UIViewController {
     
     static func generateColor() -> UIColor {
         switch Int.random(in: 1...4) {
-        case 1: return UIColor.yellow
+        case 1: return UIColor.blue
         case 2: return UIColor.red
         case 3: return UIColor.green
         case 4: return UIColor.brown
-        default: return UIColor.cyan
+        default: return UIColor.black
         }
     }
 
