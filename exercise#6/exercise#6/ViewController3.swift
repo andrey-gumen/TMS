@@ -29,9 +29,9 @@ class ViewController3: UIViewController {
             case .Down:
                 return CGPoint(x: 0, y: offset)
             case .Left:
-                return CGPoint(x: offset, y: 0)
-            case .Right:
                 return CGPoint(x: -offset, y: 0)
+            case .Right:
+                return CGPoint(x: offset, y: 0)
             }
         }
     }
