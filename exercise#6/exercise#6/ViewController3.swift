@@ -18,21 +18,27 @@ class ViewController3: UIViewController {
     
     private let circle = UIView()
     
-    private let offset: CGFloat = 20
     enum OffsetType {
-        case Left
-        case Right
-        case Up
-        case Down
+        case Left, Right, Up, Down
+        
+        func getOffset() -> CGPoint {
+            let offset: CGFloat = 20
+            switch self {
+            case .Up:
+                return CGPoint(x: 0, y: -offset)
+            case .Down:
+                return CGPoint(x: 0, y: offset)
+            case .Left:
+                return CGPoint(x: offset, y: 0)
+            case .Right:
+                return CGPoint(x: -offset, y: 0)
+            }
+        }
     }
     
     func moveCircle(to: OffsetType) {
-        switch to {
-        case .Left: moveCircle(to: CGPoint(x: -offset, y: 0));
-        case .Right: moveCircle(to: CGPoint(x: offset, y: 0));
-        case .Up: moveCircle(to: CGPoint(x: 0, y: -offset));
-        case .Down: moveCircle(to: CGPoint(x: 0, y: offset));
-        }
+        let offset = to.getOffset()
+        moveCircle(to: offset)
     }
     
     func moveCircle(to offset: CGPoint) {
@@ -55,6 +61,10 @@ class ViewController3: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let size: CGFloat = 60
+        circle.bounds.size = CGSize(width: size, height: size)
+        circle.layer.cornerRadius = size / 2
+        circle.backgroundColor = .red
         view.addSubview(circle)
     }
     
@@ -62,10 +72,6 @@ class ViewController3: UIViewController {
         super.viewWillAppear(animated)
         
         circle.center = view.center
-        let size: CGFloat = 60
-        circle.bounds.size = CGSize(width: size, height: size)
-        circle.layer.cornerRadius = size / 2
-        circle.backgroundColor = .red
     }
 
     @IBAction func upHandler(_ sender: Any) {
