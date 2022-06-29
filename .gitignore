@@ -1,4 +1,7 @@
 .DS_Store
 *.xcuserstate
 exercise#4.playground/xcuserdata/andrey.gumen.xcuserdatad/xcschemes/xcschememanagement.plist
-exercise#4.playground/playground.xcworkspace/contents.xcworkspacedata
+exercise#4.playground/playground.xcworkspace/*
+Racing/Racing.xcodeproj/xcuserdata/*
+Racing/Racing.xcodeproj/project.xcworkspace/*
+Racing/Racing/Assets.xcassets/*
