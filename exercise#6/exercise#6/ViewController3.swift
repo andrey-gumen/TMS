@@ -76,9 +76,19 @@ class ViewController3: UIViewController {
 
     @IBAction func upHandler(_ sender: Any) {
         moveCircle(to: .Up)
+        NotificationCenter.default.post(name: Notification.Name(ViewController.notificationName), object: nil)
     }
     @IBAction func downHandler(_ sender: Any) {
         moveCircle(to: .Down)
+        
+        let storyboard = UIStoryboard(name: "extra", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "ExtraStoryBoard") as! ExtraViewController
+        
+        controller.view.backgroundColor = .green
+        
+        present(controller, animated: true) {
+            print("test message")
+        }
     }
     @IBAction func leftHandler(_ sender: Any) {
         moveCircle(to: .Left)
